@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+.image{
+  height:100vh;
+  width:100vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  color:black;
+  font-size:500%;
+  position:relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.blackfilm{
+  width:100vw;
+  height:15vh;
+  background-color:black;
+  opacity:1;
+}
+.para1{
+  color:aliceblue;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  position:absolute;
+  left:600px;
+  font-size:400%;
+  text-shadow:2px 2px 20px red;
+}
+.makeblack{
+  width:100vw;
+  height:100vh;
+  background-color:black;
+  position:absolute;
+}
+.makewhite{
+  width:100px;
+  height:100px;
+  background-color:white;
+  position:relative;
+  top:380px;
+  border-radius:2px rgb(32, 207, 149);
+  margin-left:10px;
+  margin-top:10px;
+  left:750px;
+  box-shadow:0px 0px 200px 1px rgb(18, 201, 192);
+  border-radius:5px;
+  transform:skew(20deg,20deg);
+}
+.makewhite:hover{
+  transform:skew(0deg,0deg);
+  transform:scale(1.1);
+  transition:2s;
+}
+.declare{
+  position:absolute;
+  top:800px;
+  left:750px;
+}
+.print1{
+  text-shadow:2px 2px 8px rgb(39, 203, 209);
+  color:aliceblue;
+}
+@media(max-width:1600px){
+  .para1{
+    font-size:400%;
+    left:300px;
+  }
+  .fullcontain{
+    position:absolute;
+    left:-100px;
+  }
+}
+@media(max-width:1300px){
+  .fullcontain{
+    position:absolute;
+    left:-250px;
+    top:-300px;
+  }
+  .declare{
+    position:absolute;
+    left:450px;
+    top:500px;
+  }
+}
+@media(max-width:1100px){
+  .para1{
+    font-size:400%;
+    left:210px;
+  }
+  .fullcontain{
+    position:absolute;
+    left:-470px;
+    top:-300px;
+  }
+  .declare{
+    position:absolute;
+    left:250px;
+    top:500px;
+  }
+}
+@media(max-width:900px){
+  .para1{
+    font-size:300%;
+    left:220px;
+  }
+  .fullcontain{
+    position:absolute;
+    left:-530px;
+    top:-300px;
+  }
+  .declare{
+    position:absolute;
+    left:200px;
+    top:600px;
+  }
+}
+@media(max-width:701px) {
+  .para1{
+    font-size:200%;
+    left:200px;
+  }
+}
+@media(max-width:500px){
+  .para1{
+    font-size:150%;
+    left:110px;
+  }
+  .fullcontain{
+    position:absolute;
+    left:-730px;
+    top:-300px;
+  }
+  .declare{
+    position:absolute;
+    left:30px;
+    top:600px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
